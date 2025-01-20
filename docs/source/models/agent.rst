@@ -3,7 +3,7 @@ Agent Models
 
 This section documents the data models used in the Agent module.
 
-.. automodule:: python_bingx.models.agent
+.. automodule:: bingx_py.models.agent
    :members:
    :undoc-members:
    :show-inheritance:

@@ -3,7 +3,7 @@ Caching
 
 The caching module provides flexible caching mechanisms to improve performance and reduce API calls.
 
-.. automodule:: python_bingx.caching
+.. automodule:: bingx_py.caching
    :members:
    :undoc-members:
    :show-inheritance:

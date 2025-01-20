@@ -18,8 +18,8 @@ Clone the repository and set up the project:
 
 .. code-block:: bash
 
-   git clone https://github.com/vispar-tech/python-bingx.git
-   cd python-bingx
+   git clone https://github.com/vispar-tech/bingx-py.git
+   cd bingx-py
    poetry install
 
 - 2. **Create a Branch**

@@ -4,7 +4,7 @@ import unittest
 
 from dotenv import load_dotenv
 
-from python_bingx import BingXAsyncClient, exceptions
+from bingx_py import BingXAsyncClient, exceptions
 
 # Load environment variables from .env file
 load_dotenv()

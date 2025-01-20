@@ -3,55 +3,55 @@ Synchronous Client
 
 The synchronous client allows you to interact with the BingX API in a blocking manner.
 
-.. automodule:: python_bingx.client
+.. automodule:: bingx_py.client
    :members:
    :undoc-members:
    :show-inheritance:
-.. automodule:: python_bingx.client.spot
+.. automodule:: bingx_py.client.spot
    :members:
    :undoc-members:
    :show-inheritance:
-.. automodule:: python_bingx.client.spot.account
+.. automodule:: bingx_py.client.spot.account
    :members:
    :undoc-members:
    :show-inheritance:
-.. automodule:: python_bingx.client.spot.market
+.. automodule:: bingx_py.client.spot.market
    :members:
    :undoc-members:
    :show-inheritance:
-.. automodule:: python_bingx.client.spot.trades
+.. automodule:: bingx_py.client.spot.trades
    :members:
    :undoc-members:
    :show-inheritance:
-.. automodule:: python_bingx.client.spot.wallet
+.. automodule:: bingx_py.client.spot.wallet
    :members:
    :undoc-members:
    :show-inheritance:
-.. automodule:: python_bingx.client.swap
+.. automodule:: bingx_py.client.swap
    :members:
    :undoc-members:
    :show-inheritance:
-.. automodule:: python_bingx.client.swap.account
+.. automodule:: bingx_py.client.swap.account
    :members:
    :undoc-members:
    :show-inheritance:
-.. automodule:: python_bingx.client.swap.market
+.. automodule:: bingx_py.client.swap.market
    :members:
    :undoc-members:
    :show-inheritance:
-.. automodule:: python_bingx.client.swap.trades
+.. automodule:: bingx_py.client.swap.trades
    :members:
    :undoc-members:
    :show-inheritance:
-.. automodule:: python_bingx.client.agent
+.. automodule:: bingx_py.client.agent
    :members:
    :undoc-members:
    :show-inheritance:
-.. automodule:: python_bingx.client.standard
+.. automodule:: bingx_py.client.standard
    :members:
    :undoc-members:
    :show-inheritance:
-.. automodule:: python_bingx.client.sub_account
+.. automodule:: bingx_py.client.sub_account
    :members:
    :undoc-members:
    :show-inheritance:

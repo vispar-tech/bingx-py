@@ -8,7 +8,7 @@ Fetching Account Information
 
 .. code-block:: python
 
-   from python_bingx import BingXHttpClient
+   from bingx_py import BingXHttpClient
 
    with BingXHttpClient(api_key="your_api_key", api_secret="your_api_secret") as client:
        account_data = client.spot.query_assets()
@@ -19,7 +19,7 @@ Placing a Spot Order
 
 .. code-block:: python
 
-   from python_bingx import BingXHttpClient
+   from bingx_py import BingXHttpClient
 
    with BingXHttpClient(api_key="your_api_key", api_secret="your_api_secret") as client:
        order_response = client.spot.place_order(
@@ -36,7 +36,7 @@ Fetching Market Data
 
 .. code-block:: python
 
-   from python_bingx import BingXHttpClient
+   from bingx_py import BingXHttpClient
 
    with BingXHttpClient(api_key="your_api_key", api_secret="your_api_secret") as client:
        market_data = client.spot.get_spot_trading_symbols(symbol="BTC-USDT")
@@ -48,7 +48,7 @@ Using `try-except-finally` block
 .. code-block:: python
 
    import asyncio
-   from python_bingx import BingXHttpClient, exceptions
+   from bingx_py import BingXHttpClient, exceptions
 
    def main():
        try:

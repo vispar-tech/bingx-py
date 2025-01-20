@@ -9,7 +9,7 @@ Fetching Account Information
 .. code-block:: python
 
    import asyncio
-   from python_bingx import BingXHttpClient
+   from bingx_py import BingXHttpClient
 
    async def main():
        async with BingXHttpClient(api_key="your_api_key", api_secret="your_api_secret") as client:
@@ -24,7 +24,7 @@ Placing a Spot Order
 .. code-block:: python
 
    import asyncio
-   from python_bingx import BingXHttpClient
+   from bingx_py import BingXHttpClient
 
    async def main():
        async with BingXHttpClient(api_key="your_api_key", api_secret="your_api_secret") as client:
@@ -45,7 +45,7 @@ Fetching Market Data
 .. code-block:: python
 
    import asyncio
-   from python_bingx import BingXHttpClient
+   from bingx_py import BingXHttpClient
 
    async def main():
        async with BingXHttpClient(api_key="your_api_key", api_secret="your_api_secret") as client:
@@ -60,7 +60,7 @@ Using `try-except-finally` block
 .. code-block:: python
 
    import asyncio
-   from python_bingx import BingXHttpClient, exceptions
+   from bingx_py import BingXHttpClient, exceptions
 
    async def main():
        client = None

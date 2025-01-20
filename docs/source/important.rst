@@ -13,8 +13,8 @@ Example:
 
 .. code-block:: python
 
-   from python_bingx import BingXClient
-   from python_bingx.exceptions import ConversationError
+   from bingx_py import BingXClient
+   from bingx_py.exceptions import ConversationError
 
    client = BingXClient(api_key="your_api_key", api_secret="your_api_secret")
 
@@ -38,7 +38,7 @@ Example with Logging:
 .. code-block:: python
 
    import logging
-   from python_bingx import BingXClient
+   from bingx_py import BingXClient
    from pydantic import ValidationError
 
    logging.basicConfig(level=logging.INFO)

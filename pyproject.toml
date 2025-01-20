@@ -1,11 +1,11 @@
 [tool.poetry]
-name = "python-bingx"
+name = "bingx-py"
 version = "0.1.0"
 description = "A python BingX API sync/async client"
 authors = ["Daniil Pavlovich <layred.dota2@mail.ru>"]
 license = "MIT"
 readme = "README.md"
-packages = [{ include = "python_bingx" }]
+packages = [{ include = "bingx_py" }]
 
 [tool.poetry.dependencies]
 python = "^3.10"
@@ -28,8 +28,8 @@ furo = "^2024.8.6"
 
 [tool.pyright]
 typeCheckingMode = "strict"
-strict = ["python_bingx"]
-include = ["python_bingx"]
+strict = ["bingx_py"]
+include = ["bingx_py"]
 
 reportMissingImports = true
 reportUnusedImport = true

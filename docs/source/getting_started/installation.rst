@@ -17,13 +17,13 @@ To install the Python BingX API Client using `pip`, run the following command:
 
 .. code-block:: bash
 
-   pip install python-bingx
+   pip install bingx-py
 
 To install a specific version:
 
 .. code-block:: bash
 
-   pip install python-bingx==1.0.0
+   pip install bingx-py==1.0.0
 
 Using poetry
 ------------
@@ -32,13 +32,13 @@ To add the Python BingX API Client to your project using `poetry`, run:
 
 .. code-block:: bash
 
-   poetry add python-bingx
+   poetry add bingx-py
 
 To install a specific version:
 
 .. code-block:: bash
 
-   poetry add python-bingx@1.0.0
+   poetry add bingx-py@1.0.0
 
 Upgrading the Client
 --------------------
@@ -47,13 +47,13 @@ To upgrade to the latest version:
 
 .. code-block:: bash
 
-   pip install --upgrade python-bingx
+   pip install --upgrade bingx-py
 
 Or, if using `poetry`:
 
 .. code-block:: bash
 
-   poetry update python-bingx
+   poetry update bingx-py
 
 Uninstalling the Client
 -----------------------
@@ -62,10 +62,10 @@ To uninstall the client:
 
 .. code-block:: bash
 
-   pip uninstall python-bingx
+   pip uninstall bingx-py
 
 Or, if using `poetry`:
 
 .. code-block:: bash
 
-   poetry remove python-bingx
+   poetry remove bingx-py

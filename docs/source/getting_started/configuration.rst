@@ -13,8 +13,8 @@ Using an In-Memory Cache
 
 .. code-block:: python
 
-   from python_bingx import BingXHttpClient
-   from python_bingx.caching import SyncMemoryCache
+   from bingx_py import BingXHttpClient
+   from bingx_py.caching import SyncMemoryCache
 
    cache = SyncMemoryCache()
    client = BingXHttpClient(
@@ -29,8 +29,8 @@ Using Redis Cache
 
 .. code-block:: python
 
-   from python_bingx import BingXHttpClient
-   from python_bingx.caching import SyncRedisCache
+   from bingx_py import BingXHttpClient
+   from bingx_py.caching import SyncRedisCache
 
    cache = SyncRedisCache(host="localhost", port=6379, db=0)
    client = BingXHttpClient(
@@ -46,7 +46,7 @@ You can configure caching globally using the `cache_config` module:
 
 .. code-block:: python
 
-   from python_bingx import cache_config
+   from bingx_py import cache_config
 
    # Set a synchronous Redis cache globally
    cache_config.set_cache("sync-redis", host="localhost", port=6379, db=0)

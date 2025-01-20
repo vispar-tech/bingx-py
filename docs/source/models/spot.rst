@@ -3,22 +3,22 @@ Spot Trading Models
 
 This section documents the data models used in the Spot Trading module.
 
-.. automodule:: python_bingx.models.spot.account
+.. automodule:: bingx_py.models.spot.account
    :members:
    :undoc-members:
    :show-inheritance:
 
-.. automodule:: python_bingx.models.spot.market
+.. automodule:: bingx_py.models.spot.market
    :members:
    :undoc-members:
    :show-inheritance:
 
-.. automodule:: python_bingx.models.spot.trades
+.. automodule:: bingx_py.models.spot.trades
    :members:
    :undoc-members:
    :show-inheritance:
 
-.. automodule:: python_bingx.models.spot.wallet
+.. automodule:: bingx_py.models.spot.wallet
    :members:
    :undoc-members:
    :show-inheritance:

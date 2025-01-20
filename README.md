@@ -14,7 +14,7 @@ This Python client facilitates communication with the BingX API, providing optio
 
 ---
 
-For more details, please check out the [documentation](https://python-bingx.readthedocs.io/en/latest/).
+For more details, please check out the [documentation](https://bingx-py.readthedocs.io/en/latest/).
 
 ## TODOs
 
@@ -32,13 +32,13 @@ For more details, please check out the [documentation](https://python-bingx.read
 Install the client using pip:
 
 ```bash
-pip install python-bingx
+pip install bingx-py
 ```
 
 Or, if you're using Poetry:
 
 ```bash
-poetry add python-bingx
+poetry add bingx-py
 ```
 
 ---
@@ -52,7 +52,7 @@ You can use the client synchronously with a context manager or manually using `t
 #### Using Context Manager
 
 ```python
-from python_bingx import BingXHttpClient
+from bingx_py import BingXHttpClient
 
 with BingXHttpClient(api_key="your_api_key", api_secret="your_api_secret", base_url="https://api.bingx.com") as client:
     response = client.spot.query_assets()
@@ -62,7 +62,7 @@ with BingXHttpClient(api_key="your_api_key", api_secret="your_api_secret", base_
 #### Using `Try-Except-Finally`
 
 ```python
-from python_bingx import BingXHttpClient, exceptions
+from bingx_py import BingXHttpClient, exceptions
 
 client = BingXHttpClient(api_key="your_api_key", api_secret="your_api_secret", base_url="https://api.bingx.com")
 try:
@@ -83,7 +83,7 @@ You can also use the client asynchronously with an async context manager or manu
 
 ```python
 import asyncio
-from python_bingx import BingXHttpClient
+from bingx_py import BingXHttpClient
 
 async def main():
     async with BingXHttpClient(api_key="your_api_key", api_secret="your_api_secret", base_url="https://api.bingx.com") as client:
@@ -97,7 +97,7 @@ asyncio.run(main())
 
 ```python
 import asyncio
-from python_bingx import BingXHttpClient, exceptions
+from bingx_py import BingXHttpClient, exceptions
 
 async def main():
     client = BingXHttpClient(api_key="your_api_key", api_secret="your_api_secret", base_url="https://api.bingx.com")
@@ -133,7 +133,7 @@ By default, the client uses a synchronous in-memory cache.
 Use the `set_cache` function to configure the cache globally:
 
 ```python
-from python_bingx.config import set_cache
+from bingx_py.config import set_cache
 
 # Set up synchronous Redis cache
 set_cache(cache_type="sync-redis", host="localhost", port=6379, db=0)
@@ -153,8 +153,8 @@ set_cache(cache_type="async-memory")
 Alternatively, pass a cache instance directly when initializing the client:
 
 ```python
-from python_bingx import BingXHttpClient
-from python_bingx.caching import SyncMemoryCache
+from bingx_py import BingXHttpClient
+from bingx_py.caching import SyncMemoryCache
 
 # Create a synchronous in-memory cache
 cache = SyncMemoryCache()
@@ -173,7 +173,7 @@ client = BingXHttpClient(
 By default, caching is only supported for GET requests. To enable caching for other HTTP methods (e.g., POST, PUT, DELETE), enable unsafe caching globally:
 
 ```python
-from python_bingx import cache_config
+from bingx_py import cache_config
 
 cache_config.enable_unsafe_cache()  # Enable unsafe caching
 ```
@@ -183,8 +183,8 @@ cache_config.enable_unsafe_cache()  # Enable unsafe caching
 Here’s an example of setting up and using a Redis cache:
 
 ```python
-from python_bingx import BingXHttpClient
-from python_bingx.config import set_cache
+from bingx_py import BingXHttpClient
+from bingx_py.config import set_cache
 
 # Set up synchronous Redis cache globally
 set_cache(cache_type="sync-redis", host="localhost", port=6379, db=0)
@@ -205,8 +205,8 @@ print(response)
 Here’s an example of using an in-memory cache:
 
 ```python
-from python_bingx import BingXHttpClient
-from python_bingx.caching import SyncMemoryCache
+from bingx_py import BingXHttpClient
+from bingx_py.caching import SyncMemoryCache
 
 # Create a synchronous in-memory cache
 cache = SyncMemoryCache()

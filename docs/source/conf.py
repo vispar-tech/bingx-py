@@ -16,7 +16,7 @@ sys.path.insert(0, str(here.parent.parent))
 
 # -- Project information -----------------------------------------------------
 
-project = "python_bingx"
+project = "bingx_py"
 copyright = "2024 Daniil Pavlovich"
 author = "Daniil Pavlovich (@vispar-tech)"
 

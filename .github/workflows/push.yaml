@@ -30,3 +30,8 @@ jobs:
 
       - name: 🔍 Run pyright (type checking)
         run: poetry run pyright .
+
+      - name: 🚀 Publish to PyPI
+        if: github.ref == 'refs/heads/main'
+        run: |
+          poetry publish --build --username __token__ --password ${{ secrets.PYPI_API_TOKEN }}
