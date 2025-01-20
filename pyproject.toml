@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "bingx-py"
-version = "0.1.0"
+version = "0.1.1"
 description = "A python BingX API sync/async client"
 authors = ["Daniil Pavlovich <layred.dota2@mail.ru>"]
 license = "MIT"

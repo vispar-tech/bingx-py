@@ -1,4 +1,4 @@
-name: Push Checks
+name: Publish to PyPI
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  lint:
+  publish:
     runs-on: ubuntu-latest
     steps:
       - name: 🛠️ Checkout code
@@ -15,18 +15,13 @@ jobs:
       - name: 🐍 Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: "3.11"
+          python-version: "3.11"  # Specify the Python version you're using
 
       - name: 📦 Install Poetry
         run: |
           pip install poetry
 
-      - name: 📦 Install dependencies with Poetry
+      - name: 🚀 Publish to PyPI
+        if: github.ref == 'refs/heads/main'
         run: |
-          poetry install --no-root
-
-      - name: 🧹 Run ruff (linting and formatting)
-        run: poetry run ruff check . --fix
-
-      - name: 🔍 Run pyright (type checking)
-        run: poetry run pyright .
+          poetry publish --build --username __token__ --password ${{ secrets.PYPI_API_TOKEN }}
