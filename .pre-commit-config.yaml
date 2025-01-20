@@ -1,0 +1,33 @@
+repos:
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.9.2
+    hooks:
+      - id: ruff-format
+        name: 🧹 ruff (formatting)
+      - id: ruff
+        args: [--fix]
+        name: 🧹 ruff (linting)
+
+  - repo: local
+    hooks:
+      - id: type-checking
+        name: 🔍 pyright (type checking)
+        entry: poetry run pyright --warnings
+        language: system
+        types: [python]
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: trailing-whitespace
+        name: 🧼 Remove trailing whitespace
+      - id: end-of-file-fixer
+        name: 📄 Ensure files end with a newline
+      - id: check-yaml
+        name: 📄 Validate YAML files
+      - id: check-json
+        name: 📄 Validate JSON files
+      - id: check-toml
+        name: 📄 Validate TOML files
+      - id: check-added-large-files
+        name: 📄 Check for added large files
