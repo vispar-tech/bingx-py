@@ -7,10 +7,11 @@ license = "MIT"
 readme = "README.md"
 packages = [{ include = "bingx_py" }]
 
-[tool.project.urls]
-repository = "https://github.com/vispar-tech/bingx-py"
-documentation = "https://bingx-py.readthedocs.io/en/latest/"
-"Bug Tracker" = "https://github.com/vispat-tech/bingx-py/issues"
+[tool.poetry.urls]
+"Homepage" = "https://github.com/vispar-tech/bingx-py"
+"Repository" = "https://github.com/vispar-tech/bingx-py"
+"Documentation" = "https://bingx-py.readthedocs.io/en/latest/"
+"Bug Tracker" = "https://github.com/vispar-tech/bingx-py/issues"
 
 
 [tool.poetry.dependencies]
