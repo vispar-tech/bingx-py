@@ -6,7 +6,7 @@ The Python BingX API Client can be installed using either `pip` or `poetry`.
 Prerequisites
 -------------
 
-- **Python 3.9 or higher**: The client is compatible with Python 3.9 and above.
+- **Python 3.10 or higher**: The client is compatible with Python 3.10 and above.
 - **pip**: The Python package installer. If you don't have it, install it by following the official guide: https://pip.pypa.io/en/stable/installation/.
 - **poetry** (optional): A dependency management tool for Python. Install it by following the official guide: https://python-poetry.org/docs/#installation.
 

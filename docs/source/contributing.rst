@@ -10,7 +10,7 @@ How to Contribute
 
 Before you start, make sure you have the following:
 
-- **Python 3.9 or higher**: The client is compatible with Python 3.9 and above.
+- **Python 3.10 or higher**: The client is compatible with Python 3.10 and above.
 - **Git**: For version control.
 - **Poetry**: For dependency management. Install it by following the [official guide](https://python-poetry.org/docs/#installation).
 
