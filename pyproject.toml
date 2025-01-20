@@ -3,7 +3,9 @@ name = "python-bingx"
 version = "0.1.0"
 description = "A python BingX API sync/async client"
 authors = ["Daniil Pavlovich <layred.dota2@mail.ru>"]
+license = "MIT"
 readme = "README.md"
+packages = [{ include = "python_bingx" }]
 
 [tool.poetry.dependencies]
 python = "^3.10"
