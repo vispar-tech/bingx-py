@@ -2,26 +2,35 @@ name: Publish to PyPI
 
 on:
   push:
-    branches:
-      - main
+    tags:
+      - "v*.*.*"  # Триггерится только при пуше тегов, соответствующих формату vX.Y.Z
 
 jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
+      # Шаг 1: Получение кода из репозитория
       - name: 🛠️ Checkout code
         uses: actions/checkout@v3
 
+      # Шаг 2: Установка Python
       - name: 🐍 Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: "3.11"  # Specify the Python version you're using
+          python-version: "3.11"  # Укажите версию Python, которую вы используете
 
+      # Шаг 3: Установка Poetry
       - name: 📦 Install Poetry
         run: |
           pip install poetry
 
+      # Шаг 4: Извлечение версии из тега и обновление pyproject.toml
+      - name: 🏷️ Update version from tag
+        run: |
+          VERSION=${GITHUB_REF#refs/tags/v}
+          poetry version $VERSION
+
+      # Шаг 5: Публикация пакета на PyPI
       - name: 🚀 Publish to PyPI
-        if: github.ref == 'refs/heads/main'
         run: |
           poetry publish --build --username __token__ --password ${{ secrets.PYPI_API_TOKEN }}
